@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>無人駅からの脱出</title>
+    <style>
+    body {
+        margin: 8mm;
+        max-width: 1200px;
+        font-size: 18px;
+        background-color: #00022a;
+        color: #fffef5;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+
+    input {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <h2 id="memo">＜メモ用＞</h2>
+    <h3>★= <input type="text" id="box1" placeholder="★"></h3>
+    <h3>✖= <input type="text" id="box2" placeholder="✖"></h3>
+    <h3>●= <input type="text" id="box3" placeholder="●"></h3>
+    <h3>▲= <input type="text" id="box4" placeholder="▲"></h3>
+    <br><br>    
+    <h1>何番に電話しますか？</h1>
+    <input type="text" id="passwordBox" placeholder="★×●▲">　<!-->
+    <button onclick="checkPassword()">送信</button><br>
+    <p>※3桁以下の数字の場合は、頭に0を付けて4桁にしてください。<br>
+       例：123→0123、999→0999、1234→1234
+    </p>
+
+    <hr>
+    <div id="result"></div>
+    <script>
+    function checkPassword() {
+        const input = document.getElementById("passwordBox").value;
+        const result = document.getElementById("result");
+        if (input === "#0108") {
+            result.innerHTML =
+                document.getElementById("0108").innerHTML;
+        } else if (input === "9412") {
+            result.innerHTML =
+                document.getElementById("9412").innerHTML;
+        } else if (input === "0000") {
+            result.innerHTML =
+                document.getElementById("0000").innerHTML;
+        } else if (input === "1214") {
+            result.innerHTML =
+                document.getElementById("1214").innerHTML;
+        } else {
+            result.innerHTML =
+                document.getElementById("ERROR").innerHTML;
+        }
+    }
+
+    </script>
+
+    <script>
+    function loadPage(id) {
+        document.getElementById("result").innerHTML =
+            document.getElementById(id).innerHTML;
+    }
+    </script>
+
+    <!-- ========================= -->
+
+<template id="0000">
+<h2>ヒントを表示します</h2>
+<p>何か重要な情報がありそうだ。</p>
+</template>
+
+<template id="0108">
+<h2>0108</h2>
+<p>
+　あなたは受話器を取り、内線『0108』を入力した。<br>
+　コール音が鳴り、数十秒ののち、誰が電話を取った。<br>
+「はいー？」<br>
+　眠たそうな声の、男の返事だ。<br>
+「あの……交通系ICで乗車してしまって」<br>
+「はあ……」<br>
+「駅から出るのに、駅員さんに電話しなきゃダメって書いてあったので」<br>
+「あの、それ来月からですよ？」<br>
+「え？」<br>
+「正常に動くと思いますけど？　そのままもう一回通ってみてください。ダメならそっち行きますんで」<br>
+　駅員らしき男は、かなりいらだった様子で電話を強く切った。<br>
+　あなたは、そんな馬鹿な、と思いながら、受話器を置いて、ICカードを片手に再び改札を通る。<br>
+<br>
+　ピーン、と軽い音がして、ゲートが開いた。<br>
+「は？」<br>
+　あなたは思わずそう声を漏らして振り返る。その向こう側、さっきあなたが電話をしていたところに、あなたの胸ほどの背丈の女の子が立っていた。顔は逆光で暗くなっているはずなのに、真っ赤な三日月上の口がきつく結ばれているのが分かった。<br>
+<br>
+<span style="color:red;">『いっちゃだめ』</span><br>
+<br>
+　体の芯に冷たく響くような声が、あなたの全身を貫く。まばたきをした瞬間に、彼女の姿は消えていた。<br>
+　あなたは駅舎に背を向けて外に出る。スマホを取り出すまでもなく、外のタクシープールには一台のタクシーが止まっていた。あなたが出てくるのを見越していたかのように、ドアが開く。あなたはそこに乗り込んで、自宅の住所を告げた。<br>
+　タクシー運転手は、あーい、と気の抜けた返事をする。<br>
+「シートベルト」<br>
+　あなたがシートベルトを締めると、男は気怠そうに「隣のお嬢さんもね」と言った。<br>
+　あなたが反論する前に、タクシーは暗闇の田舎の村を、どこかに向かって走り始めた。<br>
+</p>
+<div  style="text-align:right;">
+<u>（無人駅からの脱出　END1　いっちゃだめ）</u>
+</div>
+<br>
+ページパスワード：mujineki<br>
+<a href="https://nazotokipyrite.wixsite.com/toppage/mujinekikaranodassyutu0108">エピローグを読む</a>
+</template>
+
+<template id="9412">
+<h2>9412</h2>
+<p>　あなたは内線番号を押そうと受話器を取り、導き出した答え『9412』を順に入力していく。どこかにダイヤルが発信された。<br>
+　15秒ほどの呼び出し音のあとに、誰かが電話に出る。</br>
+</br>
+「あの……？」</br>
+<span style="color:red;">「あははは……」</span></br>
+</br>
+　突然響いた女の笑い声に、背筋がビンと伸びた。受話器を握る手の平に、じっとりとねばつくような汗がにじむ。</br>
+</br>
+「あの……すみません、交通系ICの件で……」</br>
+<span style="color:red;">「ななとお話し、したかった？」</span></br>
+「え、あの……？」</br>
+</br>
+　あなたの声に、受話器の向こうの女は何も答えない。</br>
+</br>
+『お掛けになった電話番号は、現在使われておりません。もう一度番号をご確認いただいて、お掛け直しください』</br>
+</br>
+　さっきの笑い声とは異なる、聞きなじみのある声質の自動案内が流れたあと、ガチャンと勢いよく通話が切られた。</br>
+　どうやら、何かが間違っているらしい。</br>
+　あなたは、受話器を置いて、再び謎に向かい合うことにした。</br></p>
+<div  style="text-align:right;">
+    <a href="#memo">ページ上部へ移動</a>
+</div>
+</template>
+
+<template id="1214">
+<h2>駅長の家へ電話</h2>
+<p>
+　駅員がおらず、交通系ICが使えないというピンチ。これは緊急時と判断しても問題ないはずだ。<br>
+　あなたは受話器を取り『1214』と押した。<br>
+<br>
+　自動音声案内風の、しわがれた男の声が流れてくる。<br>
+<br>
+『このまま駅長宅につなぐ場合は＃を押してください。お掛け間違いの場合は、そのまま受話器を置いて、通話を終了してください』<br>
+<br>
+　駅長につなげば、この謎を解くこともなく、あなたは無事にこの駅舎から脱出できるだろう。ちらりと目の端に、掲示板の文字たちが移った。<br>
+
+<a href="#" onclick="loadPage('ekicho'); return false;">
+    ▶＃を押して、謎を解くのをやめる
+</a>
+<br>
+<a href="#" onclick="loadPage('clear'); return false;">
+    ▶受話器を置く
+</a>
+</p>
+</template>
+
+<template id="ekicho">
+<h2>1214#</h2>
+<p>　あなたは『＃』を押した。数回のコール音の後、先ほどの男と同様の声が聞こえてきた。<br>
+「あの……交通系ICで乗車してしまって」<br>
+「はあ……」<br>
+「駅から出るのに、誰かに電話しなきゃダメって書いてあったので」<br>
+「それ、来月からだから」<br>
+「え？」<br>
+「そのままもう一回通って。んで、ダメならそっち行くから。その時はもっかい電話してきて。じゃ」<br>
+　駅長らしき男は、かなりいらだった様子で電話を強く切った。<br>
+　あなたは、そんな馬鹿な、と思いながら、受話器を置いて、ICカードを片手に再び改札を通る。<br>
+<br>
+　ピーン、と軽い音がして、ゲートが開いた。<br>
+「は？」<br>
+　あなたは思わずそう声を漏らして振り返る。その向こう側、さっきあなたが電話をしていたところに、あなたの胸ほどの背丈の女の子が立っていた。顔は逆光で暗くなっているはずなのに、真っ赤な三日月上の口がきつく結ばれているのが分かった。<br>
+<br>
+<a style="color:red;">『いっちゃだめ』</a><br>
+<br>
+　体の芯に冷たく響くような声が、あなたの全身を貫く。まばたきをした瞬間に、彼女の姿は消えていた。<br>
+　あなたは駅舎に背を向けて外に出る。スマホを取り出すまでもなく、外のタクシープールには一台のタクシーが止まっていた。あなたが出てくるのを見越していたかのように、ドアが開く。あなたはそこに乗り込んで、自宅の住所を告げた。<br>
+　タクシー運転手は、あーい、と気の抜けた返事をする。<br>
+「シートベルト」<br>
+　その言葉を合図に、タクシーは暗闇の田舎の村を、どこかに向かって走り始めた。<br>
+<br>
+<div  style="text-align:right;">
+<u>（無人駅からの脱出　END2　不完全な脱出劇と悲劇の序章）</u></div><br>
+ページパスワード：mujineki<br>
+<a href="https://nazotokipyrite.wixsite.com/toppage/mujinekikaranodassyutu0108">エピローグを読む</a>
+</template>
+
+<template id="clear">
+</template>
+
+<template id="ERROR">
+<h2>電話は繋がらなかった……</h2>
+</template>
+
+</body>
+</html>
