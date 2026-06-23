@@ -80,6 +80,16 @@
     <!-- ========================= -->
 
 <template id="0000">
+<script>
+    function showPopup(title, text) {
+        document.getElementById("popupTitle").innerText = title;
+        document.getElementById("popupText").innerText = text;
+        document.getElementById("popup").style.display = "block";
+    }
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
 <h2>宿直室</h2>
 <p>
 数回のコール音ののち、ぼんやりとした男の声が聞こえてきた。<br>
@@ -89,7 +99,6 @@
 <div id="popup" style="display:none;">
     <h2 id="popupTitle"></h2>
     <p id="popupText"></p>
-
     <button onclick="closePopup()">
         閉じる
     </button>
@@ -164,17 +173,6 @@ onclick="showPopup('▲のヒント','伝言板の謎を解けば分かりそう
 ▲のヒント
 </a><br>
 </p>
-
-<script>
-    function showPopup(title, text) {
-        document.getElementById("popupTitle").innerText = title;
-        document.getElementById("popupText").innerText = text;
-        document.getElementById("popup").style.display = "block";
-    }
-    function closePopup() {
-        document.getElementById("popup").style.display = "none";
-    }
-</script>
 
 </template>
 
