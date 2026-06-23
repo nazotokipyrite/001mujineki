@@ -97,6 +97,15 @@
 数回のコール音ののち、ぼんやりとした男の声が聞こえてきた。<br>
 「はい、宿直室……」<br>
 あなたが事情を説明しようとする前に、男は「分かんないことがあるんでしたら、教えますけど」と言った。<br>
+
+    <div id="popup" style="display:none;">
+        <h3 id="popupTitle"></h3>
+        <p id="popupText"></p>
+        <button onclick="closePopup()">
+            閉じる
+        </button>
+    </div>
+    
 <a href="#"
 onclick="showPopup('掲示物①のヒント1','●と■にはそれぞれ別の数字が入ります。なので、●■月■●日は1年のある1日に決まりますよ。'); return false;">
 掲示物①のヒント１
@@ -292,12 +301,7 @@ onclick="showPopup('▲のヒント','伝言板の謎を解けば分かりそう
 </template>
 </div>
 
-<div id="popup" style="display:none;">
-    <h3 id="popupTitle"></h3>
-    <p id="popupText"></p>
-    <button onclick="closePopup()">
-        閉じる
-    </button>
+
 
     
 </body>
